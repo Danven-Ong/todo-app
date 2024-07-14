@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Todo app</title>
+  </head>
+  <body>
+    <div class="picture-container">
+      <picture
+        ><source
+          media="(min-width: 35em)"
+          srcset="images/bg-desktop-dark.jpg"
+        />
+        <img class="background-img bg--dark" src="images/bg-mobile-dark.jpg" />
+      </picture>
+      <picture
+        ><source
+          media="(min-width: 35em)"
+          srcset="images/bg-desktop-light.jpg"
+          class="desktop-img"
+        />
+        <img
+          class="background-img bg--light"
+          src="images/bg-mobile-light.jpg"
+        />
+      </picture>
+    </div>
+    <div class="body__container">
+      <header class="header | container">
+        <h1 class="header__title">Todo</h1>
+        <button class="btn header__button">
+          <img class="header__icon icon--sun" src="images/icon-sun.svg" />
+          <img class="header__icon icon--moon" src="images/icon-moon.svg" />
+        </button>
+      </header>
+      <main class="todo | container">
+        <div class="todo__create">
+          <div class="todo__checkbox-container">
+            <button class="btn todo__create-btn"></button>
+          </div>
+          <input
+            class="todo__input todo__input--text"
+            id="textbox"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+        </div>
+        <div class="todo__list"></div>
+        <div class="todo__task-summary"></div>
+        <div class="todo__filter">
+          <p class="todo__items-left-text">No more tasks!</p>
+          <div class="todo__filter-btns">
+            <button class="btn todo__filter-btn btn--all">All</button>
+            <button class="btn todo__filter-btn btn--active">Active</button>
+            <button class="btn todo__filter-btn btn--completed">
+              Completed
+            </button>
+          </div>
+          <button class="btn todo__clear-completed-btn">Clear completed</button>
+        </div>
+        <div class="todo__helper-container">
+          <p class="todo__helper-text">Drag and drop to reorder list</p>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
