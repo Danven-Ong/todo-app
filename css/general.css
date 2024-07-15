@@ -1,0 +1,76 @@
+/* GENERAL */
+:root {
+  /* DEFAULT COLORS */
+  --white: hsl(0, 0%, 98%);
+  --bright-blue: hsl(220, 98%, 61%);
+
+  /* COLORS FOR DARK MODE */
+  --background-color: hsl(235, 21%, 11%);
+  --dt-todo-box-color: hsl(235, 24%, 19%);
+  --primary-color: hsl(234, 39%, 85%);
+  --secondary-color: hsl(234, 11%, 52%);
+  --strike-through-color: hsl(234, 14%, 40%);
+  --completed-text-color: hsl(233, 14%, 35%);
+  --tertiary-color: hsl(237, 14%, 26%);
+  --drag-color: hsl(240, 26%, 13%);
+}
+
+[data-theme="light"] {
+  /* COLORS FOR LIGHT MODE */
+  --background-color: hsl(236, 33%, 92%);
+  --dt-todo-box-color: hsl(0, 0%, 98%);
+  --primary-color: hsl(235, 19%, 35%);
+  --secondary-color: hsl(236, 9%, 61%);
+  --strike-through-color: hsl(233, 8%, 77%);
+  --completed-text-color: hsl(233, 11%, 84%);
+  --tertiary-color: hsl(236, 33%, 92%);
+  --drag-color: hsl(235, 21%, 88%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background-color);
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__container {
+  width: 54rem;
+  margin-inline: 2.4rem;
+}
+
+.picture-container,
+.background-img {
+  width: 100%;
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.bg--light {
+  display: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.task--displayed.no-border {
+  border-top: none;
+}
