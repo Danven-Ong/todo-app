@@ -70,7 +70,3 @@ body {
   border: none;
   cursor: pointer;
 }
-
-.task--displayed.no-border {
-  border-top: none;
-}
