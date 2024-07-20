@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="assets/images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,19 +28,22 @@
       <picture
         ><source
           media="(min-width: 35em)"
-          srcset="images/bg-desktop-dark.jpg"
+          srcset="assets/images/bg-desktop-dark.jpg"
         />
-        <img class="background-img bg--dark" src="images/bg-mobile-dark.jpg" />
+        <img
+          class="background-img bg--dark"
+          src="assets/images/bg-mobile-dark.jpg"
+        />
       </picture>
       <picture
         ><source
           media="(min-width: 35em)"
-          srcset="images/bg-desktop-light.jpg"
+          srcset="assets/images/bg-desktop-light.jpg"
           class="desktop-img"
         />
         <img
           class="background-img bg--light"
-          src="images/bg-mobile-light.jpg"
+          src="assets/images/bg-mobile-light.jpg"
         />
       </picture>
     </div>
@@ -48,8 +51,14 @@
       <header class="header | container">
         <h1 class="header__title">Todo</h1>
         <button class="btn header__button">
-          <img class="header__icon icon--sun" src="images/icon-sun.svg" />
-          <img class="header__icon icon--moon" src="images/icon-moon.svg" />
+          <img
+            class="header__icon icon--sun"
+            src="assets/images/icon-sun.svg"
+          />
+          <img
+            class="header__icon icon--moon"
+            src="assets/images/icon-moon.svg"
+          />
         </button>
       </header>
       <main class="todo | container">
