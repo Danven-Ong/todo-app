@@ -1,0 +1,60 @@
+/* ABOVE 1280px */
+@media (min-width: 80em) {
+  .todo__list {
+    border-radius: 0.5rem;
+  }
+  .todo__task {
+    height: 4.3rem;
+  }
+  .todo__filter .todo__items-left-text,
+  .todo__filter .todo__clear-completed-btn {
+    display: block;
+  }
+
+  .todo__task-summary {
+    display: none !important;
+  }
+
+  .todo__filter {
+    justify-content: space-between;
+  }
+
+  .todo__items-left-text {
+    flex: 1;
+  }
+
+  .todo__clear-completed-btn {
+    flex: 1;
+    text-align: right;
+  }
+
+  .todo__delete--btn {
+    display: none;
+  }
+
+  .todo__task:hover .todo__delete--btn {
+    display: block;
+  }
+
+  .task--displayed:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (hover: hover) {
+  .todo__input--checkbox:hover:not(:checked) + .todo__checked-icon,
+  .todo__create-btn:hover {
+    border: 0.1rem solid transparent;
+    background: linear-gradient(
+          var(--dt-todo-box-color),
+          var(--dt-todo-box-color)
+        )
+        padding-box,
+      linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%))
+        border-box;
+  }
+
+  .todo__filter-btn:hover {
+    color: var(--primary-color) !important;
+  }
+}
